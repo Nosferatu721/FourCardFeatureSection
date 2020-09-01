@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section
 
-![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Four card feature section coding challenge](https://res.cloudinary.com/dz209s6jk/image/upload/v1571319220/Challenges/czhvpqpwrao3iao7f1cs.jpg)
 
 ## Welcome! 👋
 
@@ -10,7 +10,7 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
-## The challenge
+## The challenge 😁
 
 Your challenge is to build out this feature section and get it looking as close to the design as possible.
 

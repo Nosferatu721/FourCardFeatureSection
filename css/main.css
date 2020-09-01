@@ -1,3 +1,13 @@
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,5 +20,106 @@ html {
 
 body {
   font-size: 1.6rem;
-  color: hsl(234, 12%, 34%);
+  color: var(--Very-Dark-Blue);
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 98%);
+}
+
+.container {
+  max-width: 100rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-info {
+  text-align: center;
+  padding: 4rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.main-info h2 {
+  font-size: 3.2rem;
+  font-weight: normal;
+}
+
+.main-info h3 {
+  font-size: 3.2rem;
+}
+
+.main-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 100px);
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.card {
+  border-radius: 0.5rem;
+  padding: 3rem;
+  box-shadow: 0 0 1rem 0.2rem var(--Grayish-Blue);
+  position: relative;
+}
+
+.Supervisor {
+  grid-row: 2 / span 2;
+  border-top: 0.4rem solid var(--Cyan);
+}
+.Builder {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-top: 0.4rem solid var(--Red);
+}
+.Calculator {
+  grid-column: 3;
+  grid-row: 2 / span 2;
+  border-top: 0.4rem solid var(--Blue);
+}
+.Karma {
+  grid-column: 2;
+  grid-row: 3 / span 2;
+  border-top: 0.4rem solid var(--Orange);
+}
+
+.card p {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+
+.card figure {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 2rem;
+  }
+
+  .main-info {
+    width: auto;
+    padding: 1rem 0;
+  }
+
+  .main-info h2,
+  .main-info h3 {
+    font-size: 2.4rem;
+  }
+
+  .main-info p {
+    margin: 2rem 0;
+  }
+
+  .main-cards-container {
+    display: block;
+  }
+
+  .card {
+    margin: 2rem 0;
+    height: 200px;
+    padding: 2rem;
+  }
 }
